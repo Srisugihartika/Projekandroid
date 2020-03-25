@@ -26,9 +26,9 @@ public class MainActivity extends AppCompatActivity {
         pindah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                suaraButton.start();
                 Intent i = new Intent(MainActivity.this,HijaiyahActivity.class);
                 startActivity(i);
+                suaraButton.start();
                 //mp.stop();
             }
         });

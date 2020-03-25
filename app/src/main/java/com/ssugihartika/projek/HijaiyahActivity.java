@@ -1,11 +1,9 @@
 package com.ssugihartika.projek;
 
 import android.content.Intent;
-import android.media.ImageWriter;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatDelegate;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,14 +16,27 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.time.Instant;
-
 public class HijaiyahActivity extends AppCompatActivity {
 
     ImageView TampilGambar;
     ImageButton show, hide, back, help;
     MediaPlayer mp;
 
+    //Untuk menambah button suara
+    final MediaPlayer SuaraAlif = MediaPlayer.create(this, R.raw.alif);//memanggil nama lagu
+    final MediaPlayer SuaraBa = MediaPlayer.create(this, R.raw.ba);
+    final MediaPlayer SuaraTa = MediaPlayer.create(this, R.raw.ta);
+    final MediaPlayer SuaraTsa = MediaPlayer.create(this, R.raw.tsa );
+    final MediaPlayer SuaraJim = MediaPlayer.create(this, R.raw.jim );
+    final MediaPlayer SuaraKha = MediaPlayer.create(this, R.raw.kha );
+    final MediaPlayer SuaraKho = MediaPlayer.create(this, R.raw.kho );
+    final MediaPlayer SuaraDal = MediaPlayer.create(this, R.raw.dal );
+    final MediaPlayer SuaraDzal = MediaPlayer.create(this, R.raw.dza );
+    final MediaPlayer SuaraRo = MediaPlayer.create(this, R.raw.ro );
+    final MediaPlayer SuaraZa = MediaPlayer.create(this, R.raw.za );
+    final MediaPlayer SuaraSin = MediaPlayer.create(this, R.raw.sa );
+    final MediaPlayer SuaraSyin = MediaPlayer.create(this, R.raw.sya );
+    final MediaPlayer SuaraShod = MediaPlayer.create(this, R.raw.sho );
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,21 +65,7 @@ public class HijaiyahActivity extends AppCompatActivity {
             }
         });
 
-        //Untuk menambah button suara
-        final MediaPlayer SuaraAlif = MediaPlayer.create(this, R.raw.alif);//memanggil nama lagu
-        final MediaPlayer SuaraBa = MediaPlayer.create(this, R.raw.ba);
-        final MediaPlayer SuaraTa = MediaPlayer.create(this, R.raw.ta);
-        final MediaPlayer SuaraTsa = MediaPlayer.create(this, R.raw.tsa );
-        final MediaPlayer SuaraJim = MediaPlayer.create(this, R.raw.jim );
-        final MediaPlayer SuaraKha = MediaPlayer.create(this, R.raw.kha );
-        final MediaPlayer SuaraKho = MediaPlayer.create(this, R.raw.kho );
-        final MediaPlayer SuaraDal = MediaPlayer.create(this, R.raw.dal );
-        final MediaPlayer SuaraDzal = MediaPlayer.create(this, R.raw.dza );
-        final MediaPlayer SuaraRo = MediaPlayer.create(this, R.raw.ro );
-        final MediaPlayer SuaraZa = MediaPlayer.create(this, R.raw.za );
-        final MediaPlayer SuaraSin = MediaPlayer.create(this, R.raw.sa );
-        final MediaPlayer SuaraSyin = MediaPlayer.create(this, R.raw.sya );
-        final MediaPlayer SuaraShod = MediaPlayer.create(this, R.raw.sho );
+
         //final MediaPlayer SuaraDhod = MediaPlayer.create(this, R.raw.dho );
         //final MediaPlayer SuaraAin = MediaPlayer.create(this, R.raw.sho );
        // final MediaPlayer SuaraGhoin = MediaPlayer.create(this, R.raw.sho );
@@ -108,15 +105,16 @@ public class HijaiyahActivity extends AppCompatActivity {
                 TampilGambar.setImageResource(R.drawable.h_a);
                 TampilGambar.startAnimation(animScale);
                 SuaraAlif.start();
-                SuaraAlif.pause();
+                SuaraAlif.stop();
+
             }
         });
+
         ButtonSuara2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 TampilGambar.setImageResource(R.drawable.h_ba);
                 TampilGambar.startAnimation(animScale);
-                SuaraBa.isLooping();
                 SuaraBa.start();
 
             }
@@ -126,8 +124,9 @@ public class HijaiyahActivity extends AppCompatActivity {
             public void onClick(View view) {
                 TampilGambar.setImageResource(R.drawable.h_ta);
                 TampilGambar.startAnimation(animScale);
+                MediaPlayer mp = new MediaPlayer();
                 SuaraTa.start();
-                SuaraTa.stop();
+                mp.stop();
             }
         });
         ButtonSuara4.setOnClickListener(new View.OnClickListener() {
@@ -255,5 +254,14 @@ public class HijaiyahActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
+
     }
+
+//    @Override
+//    public void onBackPressed() {
+//        SuaraAlif.stop();
+//        SuaraBa.stop();
+//        super.onBackPressed();
+//
+//    }
 }
