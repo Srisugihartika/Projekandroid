@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tajwid.TufatulActivity"
+    android:background="@drawable/bkr">
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/horizontalScrollView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/menu_nunmati"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:background="@drawable/ta"/>
+        <ImageButton
+            android:id="@+id/menu_dua"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:background="@drawable/tb"/>
+        <ImageButton
+            android:id="@+id/menu_tiga"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:background="@drawable/tc" />
+        <ImageButton
+            android:id="@+id/menu_empat"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:background="@drawable/td" />
+        <ImageButton
+            android:id="@+id/menu_lima"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:background="@drawable/te" />
+        <ImageButton
+            android:id="@+id/menu_enam"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:background="@drawable/tf" />
+        <ImageButton
+            android:id="@+id/menu_tuju"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:background="@drawable/tg" />
+        <ImageButton
+            android:id="@+id/menu_delapan"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:background="@drawable/th" />
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <ImageButton
+        android:id="@+id/btnahelp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/ihelp" />
+
+    <ImageButton
+        android:id="@+id/btnkembali"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/iback" />
+
+</RelativeLayout>

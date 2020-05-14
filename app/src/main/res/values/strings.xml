@@ -1,3 +1,21 @@
 <resources>
-    <string name="app_name">projek</string>
+    <string name="app_name">Belajar Ilmu Tajwid</string>
+    <string name="LOADING">LOADING...</string>
+    <string name="tentang">ABOUT</string>
+    <string name="isiabout1">Aplikasi pengenalan huruf hijaiyah dan ilmu tajwid untuk kelas III dan IV Madrasah Diniyah Takmaliya Awaliya</string>
+    <string name="isiabout2">Materi ilmu tajwid diambil dari buku tajwid Sifaul Zihan (III) dan Tufatul Atfal (IV)</string>
+
+    <string name="hijaiyah">HIJAIYAH</string>
+    <string name="isih">Huruf Hijaiyah yaitu abjad arab yang dimulai dari (alif) sampai dengan (ya).</string>
+    <string name="isih1">Click icon huruf hijaiyah untuk menampilkan popup dan mendengarkan suara.</string>
+
+    <string name="tajwidta">TAJWID TUFATUL ATFAL</string>
+    <string name="isita">Tuhfat al-Athfaal (hadiah pemberian bagi anak-anak), dari Al-Mihiy</string>
+    <string name="isita1">Kitab nadzom ini hanya membahas hukum nun mati dan tanwin, serta hukum mad.</string>
+
+    <string name="tajwidsj">TAJWID SIFAUL JIHAN</string>
+    <string name="isisj">Tuhfat al-Athfaal (hadiah pemerian bagi anak-anak), dari Al-Mihiy</string>
+    <string name="isisj1">Kitab nadzom ini hanya membahas hukum nun mati dan tanwin, serta hukum mad.</string>
+
+
 </resources>
